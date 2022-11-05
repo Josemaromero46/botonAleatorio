@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<style>
+    body{
+        
+        color: white;
+        text-align: center;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 90vh;
+    }
+    @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    }
+    @keyframes gradiente {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    }
+    button{
+        top: 200px;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        animation: gradiente 10s ease infinite;
+        background-size: 400% 400%;
+        border-color: black;
+        border: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        padding: 5px 15px;
+        color: white;
+    }
+    .todo{
+        position: relative;
+        top: 100px;
+        color: white;
+    }
+</style>
+ <html>
+   <head>
+     <title>Admitalo amor</title>
+   </head>
+   <body>
+    <div class="todo">
+        <h1>Duki es mejor que BTS</h1>
+            <br><br>
+        <div class="respuestas">
+        <div class="primera">
+            <button><h3>Si</h3></button>
+        </div>
+        <br>
+        <div class="segunda">
+            <button class="mover"><h3>No</h3></button>
+        </div>
+        </div>
+    </div>
+   </body>
+  </html>
+  
+  <script>
+    let boton_no = document.getElementsByClassName('mover')[0];
+    
+    boton_no.onmouseover = () => {
+          boton_no.style.position = "absolute";
+          boton_no.style.left = Math.random()*1100 + 'px';
+          boton_no.style.top = Math.random()*400 + 'px';
+    }
+    
+  </script>
